@@ -1,9 +1,7 @@
-// building a random generator program with the topic being "What's for dinner?"
-// whatsForDinner.js will randomly generate an idea for a complete meal from 4 different data sets (arrays)
-// the first step will be to determine if we're 'cooking dinner' (75% chance) or 'ordering dinner' (25% chance)
+// building a program that generates random responses to the question "What's for dinner?"
+// whatsForDinner.js will randomly generate an idea for a complete meal starting with the first decision point: "Cook dinner" or "Order out"
 // based off the initial determination, cooking or ordering, a random generation of a meal will be made
 
-// function to determine if the generation will be a cooking or ordering dinner
 const cookOrOrder = () => {
     const cookOrderResult = Math.random() < 0.5 ? "cook" : "order";
     console.log(`The kids have decided they want to ${cookOrderResult} dinner tonight.`);
